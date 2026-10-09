@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ruang Belajar Faishal adalah pusat sumber belajar SD: materi, modul ajar, video, kuis, unduhan, dan artikel pendidikan." />
+  <meta name="theme-color" content="#176b55">
+  <title>Ruang Belajar Faishal | Belajar, Berkarya, Bertumbuh</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#konten">Langsung ke konten</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#beranda" aria-label="Ruang Belajar Faishal - Beranda">
+        <span class="brand-mark">RF</span><span><strong>Ruang Belajar Faishal</strong><small>Belajar · Berkarya · Bertumbuh</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">☰ <span class="sr-only">Buka menu</span></button>
+      <nav id="mainNav" class="main-nav" aria-label="Navigasi utama">
+        <a href="#materi">Materi</a><a href="#video">Video</a><a href="#kuis">Kuis</a><a href="#unduhan">Unduhan</a><a href="#artikel">Artikel</a><a href="#profil" class="nav-cta">Tentang Saya</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="konten">
+    <section class="hero" id="beranda">
+      <div class="hero-shape shape-one"></div><div class="hero-shape shape-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> Pusat sumber belajar sekolah dasar</span>
+          <h1>Belajar lebih mudah,<br><em>bertumbuh bersama.</em></h1>
+          <p>Selamat datang di Ruang Belajar Faishal—ruang berbagi materi, media pembelajaran, ide pendidikan, dan teknologi yang membantu guru serta siswa terus berkembang.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#materi">Jelajahi materi <span>↗</span></a><a class="button button-ghost" href="#profil">Kenali pengelola</a></div>
+          <div class="hero-note"><span class="avatar-stack"><b>📚</b><b>✏️</b><b>💡</b></span><span>Sumber belajar yang praktis, ramah, dan terus dikembangkan.</span></div>
+        </div>
+        <div class="hero-art" aria-label="Ilustrasi buku dan alat belajar" role="img">
+          <div class="art-sun"></div><div class="art-card card-back"><span>IDE HARI INI</span><strong>Belajar itu<br>petualangan.</strong><i>✦</i></div>
+          <div class="book book-green"><span>RUANG</span><strong>BELAJAR</strong><small>Temukan hal baru</small></div>
+          <div class="book book-cream"><span>CATATAN</span><strong>Kecil,<br>berarti.</strong><small>✎</small></div>
+          <div class="pencil"></div><div class="art-spark spark-a">✦</div><div class="art-spark spark-b">✳</div>
+          <div class="art-caption"><span class="caption-icon">✓</span><span><strong>Belajar sepanjang hayat</strong><small>Satu langkah setiap hari</small></span></div>
+        </div>
+      </div>
+      <div class="container subject-strip"><span>Jelajahi berbagai bidang:</span><a href="#materi" data-subject-link="Bahasa Indonesia">Bahasa Indonesia</a><a href="#materi" data-subject-link="Matematika">Matematika</a><a href="#materi" data-subject-link="IPAS">IPAS</a><a href="#materi" data-subject-link="Pendidikan Pancasila">Pendidikan Pancasila</a><a href="#materi" data-subject-link="PAI">PAI</a></div>
+    </section>
+
+    <section class="section section-white" id="materi">
+      <div class="container">
+        <div class="section-heading"><div><span class="eyebrow">Pustaka pembelajaran</span><h2>Temukan bahan belajar</h2><p>Jelajahi contoh kategori di bawah ini. Materi dapat ditambah dan diperbarui sesuai kebutuhan kelas.</p></div><a class="text-link" href="#unduhan">Lihat sumber unduhan <span>→</span></a></div>
+        <div class="filters"><label class="search-box"><span>⌕</span><input id="materialSearch" type="search" placeholder="Cari materi atau mata pelajaran…" aria-label="Cari materi"></label><select id="gradeFilter" aria-label="Pilih kelas"><option value="all">Semua kelas</option><option value="1">Kelas 1</option><option value="2">Kelas 2</option><option value="3">Kelas 3</option><option value="4">Kelas 4</option><option value="5">Kelas 5</option><option value="6">Kelas 6</option></select><select id="subjectFilter" aria-label="Pilih mata pelajaran"><option value="all">Semua mata pelajaran</option><option>Bahasa Indonesia</option><option>Matematika</option><option>IPAS</option><option>Pendidikan Pancasila</option><option>PAI</option><option>Bahasa Inggris</option><option>Seni Budaya</option></select></div>
+        <div class="material-grid" id="materialGrid" aria-live="polite"></div><p class="empty-state" id="emptyState" hidden>Belum ada materi yang cocok. Coba ubah kata kunci atau filter.</p>
+        <div class="editor-note"><span>💡</span><p><strong>Untuk pengelola:</strong> kartu di bawah adalah contoh awal. Bapak bisa mengganti judul, deskripsi, dan tautan materi melalui berkas <code>script.js</code> atau menaruh file di folder <code>materi</code>.</p></div>
+      </div>
+    </section>
+
+    <section class="section video-section" id="video">
+      <div class="container video-grid"><div class="video-copy"><span class="eyebrow eyebrow-light">Belajar lewat video</span><h2>Materi terasa lebih dekat lewat visual.</h2><p>Tempat untuk mengumpulkan video penjelasan, demonstrasi, cerita edukatif, dan media buatan sendiri. Ganti tautan contoh dengan video YouTube milik Bapak.</p><a class="button button-light" href="https://www.youtube.com/" target="_blank" rel="noopener">Cari inspirasi video <span>↗</span></a></div>
+        <div class="video-placeholder"><div class="video-window"><div class="video-top"><span></span><span></span><span></span><small>RUANG VIDEO</small></div><div class="video-scene"><div class="scene-sun"></div><div class="scene-hill hill-a"></div><div class="scene-hill hill-b"></div><div class="scene-book">A B C</div><button id="videoInfoButton" class="play-button" aria-label="Lihat petunjuk video">▶</button></div><div class="video-label"><span><strong>Video pembelajaran pilihan</strong><small>Tambahkan tautan video melalui script.js</small></span><span class="video-time">▶ VIDEO</span></div></div></div>
+      </div>
+    </section>
+
+    <section class="section section-white" id="kuis"><div class="container quiz-layout"><div class="quiz-intro"><span class="eyebrow">Coba kemampuanmu</span><h2>Belajar juga bisa menyenangkan.</h2><p>Uji pemahaman melalui kuis singkat. Contoh soal ini dapat diganti dengan pertanyaan sesuai materi yang sedang dipelajari.</p><div class="quiz-stat"><span class="stat-icon">✦</span><span><strong>Langsung tahu hasilnya</strong><small>Jawaban dan skor ditampilkan setelah selesai.</small></span></div></div>
+      <div class="quiz-card"><div class="quiz-card-head"><span class="quiz-tag">KUIS MINI</span><span id="quizProgress">Pertanyaan 1 dari 3</span></div><div class="progress-track"><div id="progressBar" class="progress-bar"></div></div><div id="quizContent"></div><div id="quizResult" class="quiz-result" hidden></div></div>
+    </div></section>
+
+    <section class="section download-section" id="unduhan"><div class="container"><div class="section-heading"><div><span class="eyebrow">Pusat berkas</span><h2>Unduh dan gunakan</h2><p>Kumpulan perangkat ajar, lembar kegiatan, dan presentasi untuk mendukung proses belajar.</p></div><span class="download-stamp">PDF · PPT · DOC</span></div><div class="download-grid" id="downloadGrid"></div><div class="download-tip"><span>📎</span><div><strong>Belum ada berkas pribadi?</strong><p>Tak masalah. Buat folder <code>materi</code>, masukkan PDF/PPT milik Bapak, lalu sesuaikan daftar tautan pada <code>script.js</code>. Jangan mengunggah materi yang memiliki hak cipta tanpa izin.</p></div></div></div></section>
+
+    <section class="section section-white" id="artikel"><div class="container"><div class="section-heading"><div><span class="eyebrow">Catatan pendidik</span><h2>Ide untuk ruang kelas hari ini</h2><p>Gagasan praktis tentang pembelajaran, kreativitas, dan penggunaan teknologi secara bijak.</p></div><a class="text-link" href="mailto:ruangbelajar@example.com?subject=Ide%20Artikel%20Ruang%20Belajar">Usulkan topik <span>→</span></a></div><div class="article-grid" id="articleGrid"></div></div></section>
+
+    <section class="profile-section" id="profil"><div class="container profile-grid"><div class="profile-visual"><div class="profile-orbit orbit-one"></div><div class="profile-orbit orbit-two"></div><div class="profile-monogram">RF</div><span class="profile-pill pill-top">Pendidik</span><span class="profile-pill pill-bottom">Pembelajar sepanjang hayat</span></div><div class="profile-copy"><span class="eyebrow eyebrow-light">Tentang pengelola</span><h2>Halo, saya Faishal.</h2><p class="profile-lead">Selamat datang di ruang berbagi saya.</p><p>Ruang Belajar Faishal dikembangkan sebagai tempat untuk mengumpulkan dan membagikan sumber belajar sekolah dasar, gagasan pembelajaran, serta pemanfaatan teknologi pendidikan secara bertanggung jawab.</p><p>Semoga setiap materi di sini membantu guru menyiapkan pembelajaran dan menemani siswa menemukan hal-hal baru. Website ini akan terus tumbuh bersama kontribusi, pengalaman, dan ide yang bermanfaat.</p><div class="profile-tags"><span>📚 Sumber belajar</span><span>💡 Inovasi pendidikan</span><span>🤝 Berbagi praktik baik</span></div><a class="button button-light" href="mailto:ruangbelajar@example.com?subject=Salam%20dari%20Ruang%20Belajar">Hubungi pengelola <span>↗</span></a><p class="profile-edit-note">Catatan: ganti alamat email contoh dan sesuaikan profil dengan data Bapak sebelum dipublikasikan.</p></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-main"><a class="brand brand-footer" href="#beranda"><span class="brand-mark">RF</span><span><strong>Ruang Belajar Faishal</strong><small>Berbagi ilmu, menumbuhkan harapan.</small></span></a><p>Tempat kecil untuk ide besar dalam pendidikan.</p><a href="#beranda" class="back-top">Kembali ke atas ↑</a></div><div class="container footer-bottom"><span>© <span id="currentYear"></span> Ruang Belajar Faishal</span><span>Dibuat dengan semangat berbagi ♥</span></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
